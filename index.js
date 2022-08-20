@@ -12,7 +12,7 @@ app.use(cors())
 app.use(express.json())
 
 const connect=()=>{
-    return mongoose.connect("mongodb://localhost:27017/mern-app")
+    return mongoose.connect("mongodb+srv://ajay:ajay@123@cluster0.favqslr.mongodb.net/?retryWrites=true&w=majority")
 }
 
 app.post("/api/signup",async(req,res)=>{
